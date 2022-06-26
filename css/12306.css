@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    width: 100%;
+}
+nav .nav_img{
+  margin-left: 355px;  
+  margin-top: 15px;
+}
+nav .nav_right{
+    float:right;
+    width: 1250px;
+    height: 70px;
+    margin-top: 10px;
+    background-image: url(../imgs/train.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 1130px 40px;
+    /* 纯色背景图可以调大小，非纯色不要调大小，会失真*/
+    border:0px solid green;
+}
+nav .nav_right .nav_right_inp{
+    float: left;
+    margin-left:105px;
+    margin-top:20px;
+    border:0px solid red;
+}
+nav .nav_right .nav_right_inp input{
+    width: 350px;
+}
+nav .nav_right .nav_right_inp img{
+    position: relative;
+    top: 5px;
+    left:-4px;
+    /* 小改动用relative 大改动用absolute */
+    /* 要确定准确位置，在浏览器f12选中元素可以上下左右调节top/left的数值，调到合适再回来改 */
+}
+nav .nav_right .nav_right_title{
+    float:right;
+    width: 390px;
+    margin-right: 300px;
+    /* 右浮动调右边距 */
+    margin-top:20px;
+    border: 0px solid red;
+}
+nav .nav_right .nav_right_title li{
+    list-style: none;
+    /* 列表元素编程一行，就用float */
+    float:left;
+    margin-right: 10px;
+}
+nav .nav_right .nav_right_title li a{
+    font-size: 12px;
+    text-decoration: none;
+    /* color:black; */
+}
+.blue1{
+    color:#3b99fc;
+} 
+.black1{
+    color:#333333;
+}
+/* 头结束 */
+/* 头下面的选项卡开始 */
+.nav_option{
+    width: 100%;
+    margin-top: 15px;
+    height: 40px;
+    background-color: #3b99fc;
+}
+.nav_option_center{
+    height: 40px;
+    width: 1160px;
+    line-height: 40px;
+    margin: 0 auto;
+}
+.nav_option li{
+    width: 145px;
+    height: 40px;
+    float:left;
+    list-style: none;
+    text-align: center;
+    color: #FFFFFF;
+}
+.nav_option li:hover{
+    background-color: #2676e3;
+}
+.option_hover{
+    background-color: #2676e3;
+}
+.cycle{
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+}
+.cycle .cycle_img_container{
+    width: 600%;
+    height:450px;
+    display:flex;
+    transition: transform 0.3s;
+}
+.cycle .cycle_img_container img{
+    width: 1920px;
+    height: 450px;
+}
+.cycle .btn{
+    position: absolute;
+    bottom:0;
+    left:800px;
+}
+.service-list{
+    width:1200px;
+    height: 140px;
+    margin: 0 auto;
+}
+.service-list li{
+    width: 165px;
+    height: 140px;
+    list-style: none;
+    float:left;
+    text-align: center;
+}
+.service-list li img{
+    margin-top:45px;
+}
+.service-list li a{
+    text-decoration: none;
+}
+.VIPService{
+    width: 1200px;
+    height: 340px;
+    margin: 0 auto;
+    border:0px solid red;
+}
+.VIPService div{
+   width: 590px;
+   height: 160px; 
+   float:left;
+   border:0px solid green;
+}
+.VIPService_right{
+    margin-left: 10px;
+}
+.VIPService_bottom{
+    margin-top:20px;
+}
+.tielulvyou{
+    width: 1200px;
+    height:55px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+.tielulvyou .left{
+    float:left;
+    height: 55px;
+    width: 70px;
+    line-height: 55px;
+    color: #3b99fc;
+    border-bottom: 2px solid #3b99fc;
+    font-size: 16px;
+}
+.tielulvyou .right{
+    float:right;
+    width: 1130px;
+    height:55px;
+    text-align: right;
+    line-height: 55px;
+    font-size: 14px;
+    color:#999999;
+    border-bottom: 2px solid #DEDEDE;
+}
+.baojia{
+    width: 1200px;
+    height: 510px;
+    margin: 0 auto;
+    margin-top: 10px;
+    /* border: 1px solid red; */
+}
+.baojia div{
+    width: 290px;
+    height: 245px;
+    /* border: 1px solid green; */
+    float:left;
+}
+.baojia div img{
+    width: 290px;
+    height: 160px;
+}
+.baojia .baojia_right{
+    margin-left: 12px;
+}
+.baojia .baojia_bottom{
+    margin-top: 10px;
+}
+.baojia .baojia_p1{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 14px;
+    color: #333333;
+}
+.baojia .baojia_p2{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+    color: #ff8201;
+}
+.zuixinfabu{
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    height: 40px;
+    width: 1200px;
+}
+.zuixinfabu div{
+    float:left;
+    width: 390px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.zuixinfabu .left{
+    background-color: #3b99fc;
+    color:#FFFFFF;
+}
+.zuixinfabu .middle, .zuixinfabu .right{
+    margin-left:10px;
+    background-color: #EFEFF4;
+}
+.list_style{
+    width: 1200px;
+    height: 255px;
+    margin: 0 auto;
+    border:2px solid #c1c1c1; 
+}
+.list_style div{
+    width:550px;
+    height: 200px;
+    /* border:1px solid red; */
+    float:left;
+}
+.list_style .list_left{
+    margin-left: 30px;;
+}
+.list_style .list_right{
+    margin-left: 50px;
+    float:right;
+}
+.list_style li{
+    margin-top: 20px;
+}
+.list_style span{
+    float:right;
+}
+.list_style .list_more{
+    margin-top: 20px;
+}
+footer{
+    margin-top: 60px;
+    width:100%;
+    height: 200px;
+    background-color: #f8f8f8;
+}
+footer .friend{
+    float:left;
+    width: 430px;
+    height: 200px;
+    margin-left: 200px;
+    text-align: left;
+}
+footer .friend_title{
+    margin-top: 35px;
+}
+footer .friend_img{
+    margin-top:20px;
+}
+footer .friend_img div{
+    float:left;
+    width: 200px;
+    margin-left: 10px;
+}
+footer .ma{
+    float:right;
+    height:200px;
+    width: 1060px;
+}
+footer .ma li{
+    list-style: none;
+    float:left;
+    margin-top: 40px;
+    margin-left: 30px;
+    width: 140px;
+}
+footer .ma .ma_img{
+    margin:0 auto;
+    margin-top:20px;
+    width: 80px;
+    height: 80px;
+}
+.ma_title{
+    float:right;
+    border:1px solid #DEDEDE;
+    width: 190px;
+    height: 80px;
+    position: relative;
+    top: 70px;
+    right: 200px;
+}
+.social{
+    background-color: #666666;
+    height: 80px;
+    width: 100%;
+}
