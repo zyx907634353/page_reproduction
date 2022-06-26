@@ -238,24 +238,38 @@ nav .nav_right .nav_right_title li a{
     width:550px;
     height: 200px;
     /* border:1px solid red; */
-    float:left;
 }
 .list_style .list_left{
+    float:left;
     margin-left: 30px;;
 }
 .list_style .list_right{
-    margin-left: 50px;
-    float:right;
+    margin-left:30px;
+    float:right ;
+    /* position: relative; */
+}
+.list_style .list_announcement{
+    float:left;
+    list-style-position: inside;
 }
 .list_style li{
     margin-top: 20px;
 }
-.list_style span{
+.list_style .list_announcement li{
+    width:400px;
+    overflow:hidden;
+    white-space:nowrap; 
+    text-overflow:ellipsis;
+}
+.list_style .list_time{
     float:right;
+    list-style: none;
 }
 .list_style .list_more{
+    float:right;
     margin-top: 20px;
 }
+/* 底部 */
 footer{
     margin-top: 60px;
     width:100%;
@@ -311,4 +325,57 @@ footer .ma .ma_img{
     background-color: #666666;
     height: 80px;
     width: 100%;
+}
+.social .font{
+    float:left;
+    margin-left:500px  ;
+}
+.social h3{
+    /* border:1px solid red; */
+    margin:0 auto;
+    margin-top:10px;
+    text-align: center;
+    color:#DEDEDE;
+}
+.social .record a{
+    text-decoration: none;
+    color: inherit;
+}
+.social .disabled{
+    float:right;
+    margin-right:500px;
+}
+/* 侧边栏 */
+aside{
+    position:fixed;
+    right:0px;
+    top:200px;
+}
+aside div{
+    position:relative;
+    height: 70px;
+    width: 40px;
+    margin-top: 10px;
+}
+aside #hav1{
+    background: url(../imgs/horn.png) no-repeat 10px 10px;
+    background-color: #EFEFEF; 
+}
+aside #hav2{
+    background: url(../imgs/phone.png) no-repeat 10px 10px; 
+    background-color: #EFEFEF; 
+}
+aside #hav3{
+    background: url(../imgs/QRcode.png) no-repeat 10px 10px; 
+    background-color: #EFEFEF; 
+}
+aside #hav4{
+    background: url(../imgs/close_show_citys2.png) no-repeat 10px 10px; 
+    background-color: #EFEFEF; 
+}
+aside h4{
+    position: relative;
+    top:35px;
+	left: 8px;
+    font-size: 2px;
 }
